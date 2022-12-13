@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <title>ISS - Project</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,500&family=Sora:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,500&family=Sora:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top shadow-lg" id="banner">
+      <div class="container">
+        <a class="navbar-brand" href="#"><h1 id="logo">ISS</h1></a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="#features"
+                aria-current="#features"
+                >Features</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#ourplans">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">About Us</a>
+            </li>
+            <button class="btn text-white ms-lg-3 btnText" id="btnSign">
+              Sign in
+            </button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Cierre navbar -->
+
+    <!-- Background -->
+    <div class="vh-100 d-flex align-items-center" id="bgImg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 text-white" id="getStart">
+            <h1 class="display-4 text-white">Real time analysis</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero
+              magni dolorem eum autem non repudiandae voluptatibus saepe. Rerum
+              nobis officiis qui aspernatur ducimus dolore ipsum. Eum mollitia
+              adipisci quasi ullam. <br />
+            </p>
+            <a href="#" class="btn text-white btnText" id="btnStart"
+              >Get Started</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Planes - Servicios - Subs -->
+    <section id="ourplans">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto text-center">
+            <h5 id="servTittle">Services</h5>
+            <h1 id="subsTittle">Our Subscriptions</h1>
+            <p class="">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+              nostrum laborum beatae cum aliquam alias ut culpa ratione
+              necessitatibus mollitia, optio quas obcaecati earum debitis
+              voluptatum ea nobis? Iure, pariatur?
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <!-- User free -->
+          <div class="col-lg-4 col-sm-6">
+            <div class="service card-effect">
+              <div class="iconbox">
+                <i class="fa-solid fa-user iconServ"></i>
+              </div>
+              <h5 class="text-center planTittle">Free User</h5>
+              <ul class="servList">
+                <li>
+                  <i class="fa-solid fa-square-check isIncl"></i> Limited
+                  Analysis
+                </li>
+                <li>
+                  <i class="fa-solid fa-square-check isIncl"></i> Limited Imput
+                  of Cards
+                </li>
+                <li>
+                  <i class="fa-solid fa-square-check noIncl"></i> Tournament
+                  Schedule
+                </li>
+                <li>
+                  <i class="fa-solid fa-square-check noIncl"></i> Remove Ads
+                </li>
+                <li><i class="fa-solid fa-square-check noIncl"></i> Support</li>
+              </ul>
+              <h6 class="priceTittle text-center">Price:</h6>
+              <h4 class="priceServ text-center">0$</h4>
+              <h6 class="priceType text-center">Limited</h6>
+
+              <div class="selectServ">
+                <a href="#"
+                  ><i class="fa-solid fa-circle-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- User Paid (1 player) -->
+          <div class="col-lg-4 col-sm-6">
+            <div class="service card-effect">
+              <div class="iconbox">
+                <i class="fa-solid fa-user-plus"></i>
+              </div>
+              <h5 class="text-center planTittle">User Plus</h5>
+              <ul class="servList">
+                <li>
+                  <i class="fa-solid fa-square-check isIncl"></i> Limited
+                  Analysis
+                </li>
+                <li>
+                  <i class="fa-solid fa-square-check isIncl"></i> Limited Imput
+                  of Cards
+                </li>
+                <li>
+                  <i class="fa-solid fa-square-check noIncl"></i> Tournament
+                  Schedule
+                </li>
+                <li>
+                  <i class="fa-solid fa-square-check noIncl"></i> Remove Ads
+                </li>
+                <li><i class="fa-solid fa-square-check noIncl"></i> Support</li>
+              </ul>
+
+              <h6 class="priceTittle text-center">Price:</h6>
+              <h4 class="priceServ text-center">4.99$</h4>
+              <h6 class="priceType text-center">Monthly</h6>
+
+              <div class="selectServ">
+                <a href="#"
+                  ><i class="fa-solid fa-circle-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Team -->
+
+          <div class="col-lg-4 col-sm-6">
+            <div class="service card-effect">
+              <div class="iconbox">
+                <i class="fa-solid fa-users-line"></i>
+              </div>
+              <h5 class="text-center planTittle">Team + Coach</h5>
+              <ul class="servList">
+                <li>
+                  <i class="fa-solid fa-square-check isIncl"></i> Limited
+                  Analysis
+                </li>
+                <li>
+                  <i class="fa-solid fa-square-check isIncl"></i> Limited Imput
+                  of Cards
+                </li>
+                <li>
+                  <i class="fa-solid fa-square-check noIncl"></i> Tournament
+                  Schedule
+                </li>
+                <li>
+                  <i class="fa-solid fa-square-check noIncl"></i> Remove Ads
+                </li>
+                <li><i class="fa-solid fa-square-check noIncl"></i> Support</li>
+              </ul>
+
+              <h6 class="priceTittle text-center">Price:</h6>
+              <h4 class="priceServ text-center">14.99$</h4>
+              <h6 class="priceType text-center">Monthly</h6>
+
+              <div class="selectServ">
+                <a href="#"
+                  ><i class="fa-solid fa-circle-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pequeño Banner  informativo -->
+
+    <section class="row w-100" id="features">
+      <div class="col-lg-6 col-img"></div>
+      <div class="col-lg-6">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-10 offset-md-1" id="textFeatures">
+              <h5 class="text-white" id="servTittle">Real Improvement</h5>
+              <h1 class="text-white" id="subsTittle">Making Better Players</h1>
+              <p class="text-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Impedit, nostrum laborum beatae cum aliquam alias ut culpa
+                ratione necessitatibus mollitia, optio quas obcaecati earum
+                debitis voluptatum ea nobis? Iure, pariatur?
+              </p>
+
+              <!-- Feature 1 -- -->
+              <div class="feature d-flex mt-5">
+                <div class="iconbox me-3">
+                  <i class="fa-solid fa-chart-line text-white"></i>
+                </div>
+                <div class="text-white">
+                  <h5 class="mt-2">Game Analysis</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptatem, a! Modi ad aliquid cum tenetur.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Feature 2  -->
+              <div class="feature d-flex mt-5">
+                <div class="iconbox me-3">
+                  <i class="fa-solid fa-gamepad text-white"></i>
+                </div>
+                <div class="text-white">
+                  <h5 class="mt-2">Better Perfomance</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptatem, a! Modi ad aliquid cum tenetur.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Feature 3  -->
+              <div class="feature d-flex mt-5">
+                <div class="iconbox me-3">
+                  <i class="fa-solid fa-table-columns text-white"></i>
+                </div>
+                <div class="text-white">
+                  <h5 class="mt-2">Centralized System</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Voluptatem, a! Modi ad aliquid cum tenetur.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+
+    <section id="contact" class="bg-light">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-8 mx-auto text-center">
+            <h6 class="">CONTACT US</h6>
+            <h1>Get In Touch</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              laborum culpa, consequuntur maxime nesciunt reiciendis dignissimos
+              fugit expedita dolore, sit nobis assumenda maiores voluptates
+              nulla? Necessitatibus ullam doloremque blanditiis accusamus.
+            </p>
+          </div>
+        </div>
+        <form action="" method="post" class="row g-3 justify-content-center">
+          <table>
+            {{ form.as_table }}
+            <div class="col-md-5">
+              <input
+                type="text"
+                name=""
+                id=""
+                class="form-control"
+                placeholder="Full Name"
+              />
+            </div>
+            <div class="col-md-5">
+              <input
+                type="text"
+                name=""
+                id=""
+                class="form-control"
+                placeholder="Email Address"
+              />
+            </div>
+            <div class="col-md-10">
+              <input
+                type="text"
+                name=""
+                id=""
+                class="form-control"
+                placeholder="Enter Subject"
+              />
+            </div>
+            <div class="col-md-10">
+              <textarea
+                name=""
+                id=""
+                cols="25"
+                rows="10"
+                class="form-control"
+                placeholder="Enter Message"
+              ></textarea>
+            </div>
+            <div class="col-md-10 d-grid">
+              <button class="btn btn-text text-white" id="btnSubmit">
+                Send
+              </button>
+            </div>
+          </table>
+          {% csrf_token %}
+        </form>
+      </div>
+    </section>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/618b0502f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

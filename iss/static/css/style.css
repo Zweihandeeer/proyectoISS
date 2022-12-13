@@ -1,0 +1,325 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+:root {
+  --bg-color: #f5f8ff;
+  --main-color: #353536;
+  --purple: #920c92;
+  --purpleBlack: #710d71;
+  --purpleLight: #a832a8;
+  --checked: #45e952;
+  --notCheck:#c5c5c5;
+  --cardShadow: 0px 8px 22px rgba(0, 0, 0, 0.2);
+  --textShadow: 0px 7px 9px rgba(32,14,9,0.5);
+
+}
+
+
+body {
+  font-family: 'Sora', sans-serif;
+  line-height: 1.7;
+  background-image: linear-gradient(
+    45deg,
+    hsl(286deg 84% 13%) 0%,
+    hsl(285deg 68% 19%) 5%,
+    hsl(284deg 60% 27%) 11%,
+    hsl(284deg 55% 35%) 21%,
+    hsl(283deg 51% 43%) 37%,
+    hsl(282deg 52% 51%) 60%,
+    hsl(277deg 60% 52%) 76%,
+    hsl(272deg 68% 53%) 85%,
+    hsl(267deg 78% 54%) 91%,
+    hsl(260deg 88% 56%) 96%,
+    hsl(252deg 100% 58%) 100%
+  ); 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1,h2,h3,h4,h5 {
+  font-family: 'Sora', sans-serif;
+
+}
+
+.btnText {
+  font-family: 'Sora', sans-serif;
+  font-weight: 500;
+}
+
+
+/* Navbar */
+.navbar .nav-link {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#logo {
+  background-color: var(--purple);
+  width: 100px;
+  text-align: center;
+  color: var(--bg-color);
+  border-radius: 12px;
+  margin: 0px auto;
+  
+
+}
+
+.active:hover {
+  transform: scale(1.05);
+  color: rgba(21,21,21);
+}
+
+/* Banner: */
+
+#banner {
+  background-color: var(--bg-color);
+}
+
+#bgImg {
+  background-image: url(https://www.pixel4k.com/wp-content/uploads/2020/02/runterra-league-of-legends-4k-3840x2160-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 2;
+}
+
+#bgImg::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(21,20,51, 0.6);
+  z-index: -1;
+}
+
+
+#getStart h1 p{
+  font-family: 'Sora', sans-serif;
+  text-shadow: var(--textShadow);
+}
+
+#getStart h1 {
+  font-weight: 400;
+  text-transform: capitalize;
+  text-shadow: var(--textShadow);
+  }
+
+#getStart p {
+  font-weight: 300;
+}
+
+
+
+/* Our services - servicios */
+
+
+#ourplans {
+  background-color: var(--bg-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+#servTittle {
+  color: var(--purple);
+  font-weight: bold;
+}
+
+#subsTittle {
+  font-weight: bold;
+}
+
+.card-effect {
+  box-shadow: var(--cardShadow);
+  background-color: var(--bg-color);
+  padding: 50px;
+  transition: all 0.35s ease;
+  color: var(--main-color);
+  margin-bottom: 15px;
+  flex: none;
+}
+
+.iconbox i {
+  color: var(--purpleLight);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-size: 45px;
+
+}
+
+.planTittle {
+  font-weight: bold;
+  background-color: var(--purpleLight);
+  color: var(--bg-color);
+  border-radius: 25px;
+  padding: 3px;
+}
+
+
+.servList {
+  margin-top: 15px;
+}
+
+.isIncl {
+  color:var(--checked);
+  margin-right: 10px;
+}
+
+.noIncl {
+  color:var(--notCheck);
+  margin-right: 10px;
+}
+
+.servList i{
+  font-size:20px;
+  text-align: start;
+}
+
+
+.selectServ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.selectServ i {
+  font-size: 50px;
+  color: var(--purpleLight);
+  margin-top: 15px;
+
+}
+
+.priceServ {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 35px;
+  margin: 10px;
+}
+
+.priceTittle {
+  font-weight: 500;
+}
+
+.priceType {
+  font-weight: lighter;
+  font-size: 15px;
+  opacity: 0.7;
+}
+
+.card-effect:hover {
+  transform: translateY(-5px);
+  transform: scale(1.03);
+}
+
+.selectServ i:hover {
+  transform: scale(1.1);
+}
+
+
+
+/* banner de features */
+
+.col-img {
+  background-image: url(https://cutewallpaper.org/23/katarina-hd-wallpaper/3143211885.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 500px;
+
+}
+
+#textFeatures {
+  padding-top: 50px;
+  padding-bottom: 60px; 
+}
+
+
+/* Contacto */
+
+#contact {
+  padding-top: 50px;
+  padding-bottom: 60px; 
+}
+
+
+
+
+
+
+/* Buttons: */
+
+#btnStart {
+  width:250px;
+  margin-top: 15px;
+}
+
+
+#btnSign, #btnStart, #btnSubmit{
+  background-color: var(--purple);
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+#btnSign:hover, #btnSubmit:hover, #btnStart:hover {
+  background-color:var(--purpleBlack);
+  transform: scale(1.04);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Form - Log in */
+
+.loginImg {
+  background-image: url(https://images8.alphacoders.com/107/1077840.jpg);
+  border-top-right-radius: .3rem;
+  border-bottom-right-radius: .3rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+} 
+
+#logButton {
+  width: 300px;
+  background-color: var(--purple);
+  border-color: var(--purple);
+}
+
+#logButton:hover {
+  background-color:var(--purpleBlack);
+  transform: translateY(-1px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.boxSh {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 991px) {
+  .loginImg{
+    background-image: var(--bg-color);
+  }
+}
+
+
+
+

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <title>ISS - Project</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/profiles.css'%}" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,500&family=Sora:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,500&family=Sora:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="d-flex">
+      <div class="sidebar-container bgSidebar">
+        <div class="logo">
+          <h4>ISS</h4>
+        </div>
+
+        <div class="menu">
+          <a href="#" class="d-block p-3"
+            ><i class="fa-solid fa-table-columns p-3"></i>Listado Cartas</a
+          >
+          <a href="#" class="d-block p-3"
+            ><i class="fa-solid fa-people-arrows p-3"></i>Enfrentamientos</a
+          >
+          <a href="#" class="d-block p-3"
+            ><i class="fa-solid fa-pen-to-square p-3"></i>Observaciones</a
+          >
+          <a href="#" class="d-block p-3"
+            ><i class="fa-solid fa-trophy p-3"></i>Torneos</a
+          >
+          <a href="#" class="d-block p-3"
+            ><i class="fa-solid fa-people-group p-3"></i>Mi equipo</a
+          >
+        </div>
+      </div>
+
+      <div class="w-100">
+        <nav class="navbar navbar-expand-lg sticky-top shadow-lg" id="banner">
+          <div class="container justify-content-center">
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+
+            <ul class="navbar-nav ms-auto justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link active profile" href="#"
+                  ><i class="fa-solid fa-user profileIcon"></i
+                ></a>
+              </li>
+              <button class="btn text-white ms-lg-3 btnText" id="btnSign">
+                Salir
+              </button>
+            </ul>
+          </div>
+        </nav>
+        <div id="content">
+          <section>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 bg-light p-3">
+                  <h1 class="">Bienvenido {{player}}</h1>
+                  <h4>Puedes revisar tus cartas:</h4>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <div class="container">
+              <div class="row stats">
+                <div class="col-lg-12 bg-light p-3" id="LibreriaCartas">
+                  <table class="table table-bordered" id="tabladecartas" style="text-align: center">
+                    <thead class="table-success">
+                      <tr>
+                          <th>ID Carta</th>
+                          <th>Nombre Carta</th>
+                          <th>Habilidad</th>
+                          <th>Keyword</th>
+                          <th>Costo de maná</th>
+                          <th>Fuerza</th>
+                          <th>Salud</th>
+                          <th>Rareza</th>
+                          <th>Tipo de carta</th>
+                          <th>Region</th>
+                          <th>Tipo de hechizo</th>
+                      </tr>
+                    </thead>
+      
+                    <tbody>
+                      {% for item in cartas %}
+                      <tr>
+                          <td>{{ item.idcarta }}</td>
+                          <td>{{ item.nombrecarta }}</td>
+                          <td>{{ item.habilidad }}</td>
+                          <td>{{ item.keyword }}</td>
+                          <td>{{ item.costomana }}</td>
+                          <td>{{ item.fuerza }}</td>
+                          <td>{{ item.salud }}</td>
+                          <td>{{ item.rareza }}</td>
+                          <td>{{ item.tipocarta }}</td>
+                          <td>{{ item.region }}</td>
+                          <td>{{ item.tipohechizo }}</td>
+                      </tr>
+                      {% endfor %}
+                    </tbody>     
+
+                  </table>
+                </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/618b0502f2.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+
+
